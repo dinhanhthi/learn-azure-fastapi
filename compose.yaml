@@ -1,0 +1,15 @@
+services:
+  v2da:
+    # build: .
+    image: v2acr2.azurecr.io/v2daimg
+    platform: linux/amd64
+    container_name: v2da
+    entrypoint: ["/entrypoint.dev.sh"]
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+      - "2222:2222"
+    volumes:
+      - ./app:/app
+    # restart: unless-stopped

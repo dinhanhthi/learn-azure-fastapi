@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    // "**/.git": true, // this is a default value
+    "**/.DS_Store": true, // this is a default value
+    "**/node_modules": true,
+    "**/jspm_packages": true,
+    "**/coverage": true,
+    "**/public": true,
+    "**/.cache": true,
+    "**/.bundles": true,
+    "**/es": true,
+    // "**/dist": true,
+    // "**/lib": true,
+    "**/umd": true,
+    // "**/ignore": false,
+    // "**/.env": false
+  }
+}
