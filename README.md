@@ -1,6 +1,6 @@
 # learn-azure-fastapi
 
-Read this note: https://dinhanhthi.com/note/simple-azure-fastapi-app/#update-image-and-re-deploy-app-service-e1cee
+Read this note: https://dinhanhthi.com/note/simple-azure-fastapi-app/
 
 ## Setting up
 
