@@ -33,6 +33,14 @@ ssh -p 2222 root@localhost
 # login first
 az login
 az acr login --name v2acr2
+
+# (if using az)
+az acr build --image v2acr2.azurecr.io/v2daimg:latest --registry v2acr2 --file Dockerfile .
+
+# (if using docker CLI)
+# login
+docker login
+# username and password in Container registries -> Settings -> Access keys
 # build image
 docker build -t v2acr2.azurecr.io/v2daimg:prod --platform=linux/amd64 .
 # push to ACR (no need if setting up auto deploy via Github)
